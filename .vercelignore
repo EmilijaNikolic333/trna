@@ -1,0 +1,7 @@
+# na Vercel ide samo ono što treba za build (public/ + src/), ne originali
+originali
+slike
+pregled
+dist
+node_modules
+.claude
