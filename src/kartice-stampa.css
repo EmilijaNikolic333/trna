@@ -1,0 +1,107 @@
+/* kartica je tačno 10×15 cm (378×567 px na 96 dpi) */
+html,
+body,
+#root {
+  height: auto;
+}
+body {
+  background: #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+body.jedna {
+  padding: 0;
+  background: #fff;
+}
+body.jedna #root {
+  display: contents;
+}
+#root {
+  display: contents;
+}
+* {
+  animation: none !important;
+}
+
+.kartica {
+  position: relative;
+  width: 378px;
+  height: 567px;
+  flex: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 34px;
+  background-color: var(--papir);
+  font-size: 16px;
+}
+.kartica-ram {
+  position: absolute;
+  inset: 14px;
+  border: 2px solid #e9b949;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 5px var(--papir), inset 0 0 0 6px #f1d68f;
+  pointer-events: none;
+}
+
+.kartica-ikona {
+  width: 40%;
+  filter: drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff)
+    drop-shadow(0 8px 10px rgba(90, 30, 40, 0.25));
+}
+.kartica-naslov {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 1.25;
+  color: var(--crvena);
+  margin: 0.4em 0 0.25em;
+}
+.kartica-pod {
+  font-family: var(--ruka);
+  font-size: 1.75em;
+  line-height: 1.1;
+  margin: 0;
+  color: var(--tekst);
+}
+.kartica-ukrasi {
+  display: flex;
+  gap: 14px;
+  margin-top: 1.4em;
+}
+.kartica-ukrasi .stiker-svg {
+  width: 46px;
+  filter: drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff)
+    drop-shadow(0 3px 4px rgba(90, 30, 40, 0.2));
+}
+
+.kartica-naslovna {
+  background: radial-gradient(circle at 50% 45%, #fff3c9, var(--papir) 70%);
+  gap: 6px;
+}
+.kartica-naslovna .stiker-kep {
+  width: 300px;
+  height: 300px;
+}
+.kartica-gore {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.9em;
+  color: var(--tamnocrvena);
+  margin: 0;
+}
+.kartica-rodj {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.6em;
+  color: var(--crvena);
+  margin: 4px 0 0;
+}
+.kartica-potpis {
+  font-family: var(--ruka);
+  font-size: 1.5em;
+  margin: 0;
+}

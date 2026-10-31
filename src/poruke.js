@@ -27,12 +27,17 @@ export const poglavlja = {
       'Sa tobom je svaki nastup bio poseban ✨',
       'Naš kep, naš ponos 🏆',
       'Hvala ti za svaku uspomenu iz sale 💖',
+      '5, 6, 7, 8… srećan rođendan, kep! 🎂',
+      
+      'Kolačići posle treninga se ne računaju 🧁',
+      "",
+      'Šljokice se ne lepe same ✨',
     ],
   },
   putovanja: {
     naslov: 'Turneja po svetu',
     ikona: 'avion',
-    podnaslov: 'Verona, Milano, Nica, Barselona, Istanbul… i svuda zajedno.',
+    podnaslov: 'Verona, Milano, Nica, Barselona, Istanbul, Budva, Zrće, Trebinje, Antverpen, Novi Sad… i svuda zajedno.',
     poruke: [
       'Pasoš✔️ Pompomovi✔️ Kep✔️ Možemo da krenemo!',
       'Najlepša putovanja su ona sa ekipom 🌍',
@@ -48,6 +53,9 @@ export const poglavlja = {
       'Sunce, more i najbolje društvo ☀️',
       "Travel mode on",
       "Ko je najbolji?",
+      '',
+      '',
+      "",
     ],
   },
   zurke: {
@@ -68,6 +76,8 @@ export const poglavlja = {
       "Ništa manje neću, jer 3 su za sreću",
       "mirror mirror on the wall",
       "Dyceee",
+      '',
+      '',
     ],
   },
   fakultet: {
@@ -80,6 +90,7 @@ export const poglavlja = {
       'Diploma u ruci, ekipa iza tebe. Uvek.',
       'Od pompona do diplome: sve si izgurala ❤️',
       'Sad imaš i papir da si najbolja 📜',
+      'Baloni, diploma i najbolja ekipa 🎈',
     ],
   },
   svadba: {
@@ -109,6 +120,8 @@ export const poglavlja = {
       'Drugi čuvaju dostojanstvo, mi čuvamo ove slike',
       'Kep u prirodnom okruženju 🦁',
       'Ovo smo slikale za ucenu. Srećan rođendan! 😇',
+      'Ovo nije pad, ovo je stav',
+      'Ozbiljne žene, ozbiljne igračke 🧸',
     ],
   },
 };

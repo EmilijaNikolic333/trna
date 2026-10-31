@@ -342,7 +342,7 @@ function SadrzajStrane({ strana }) {
           {strana.slike.map((s, i) => (
             <Polaroid key={s.ime} ime={s.ime} slot={s.slot} indeks={i} />
           ))}
-          <Porukica tekst={strana.tekst} pozicija={strana.poruka} kljuc={strana.kljuc} />
+          {strana.tekst && <Porukica tekst={strana.tekst} pozicija={strana.poruka} kljuc={strana.kljuc} />}
           {strana.stikeri.map((s, i) => (
             <Stiker
               key={i}

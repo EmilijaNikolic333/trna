@@ -1,0 +1,164 @@
+@page {
+  size: A4;
+  margin: 10mm;
+}
+
+html,
+body,
+#root {
+  height: auto;
+  background: #fff;
+}
+body {
+  background: #fff;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.list {
+  width: 190mm;
+  height: 277mm;
+  padding: 0;
+  margin: 0 auto 10mm;
+  background: #fff;
+  overflow: hidden;
+  break-after: page;
+  display: flex;
+  flex-direction: column;
+  gap: 6mm;
+}
+@media screen {
+  body {
+    background: #ddd;
+    padding: 20mm 0;
+  }
+  .list {
+    padding: 0;
+    outline: 10mm solid #fff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+@media print {
+  .list {
+    margin: 0;
+  }
+}
+
+/* tanka siva linija = ovde se seče makazama */
+.isecak {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0.3mm dashed #c8c8c8;
+  outline-offset: 1.2mm;
+  break-inside: avoid;
+}
+.isecak .stiker-tekst {
+  position: static;
+  font-size: 13pt;
+}
+.isecak .stiker-svg {
+  animation: none;
+  filter: drop-shadow(0.5mm 0 0 #fff) drop-shadow(-0.5mm 0 0 #fff) drop-shadow(0 0.5mm 0 #fff) drop-shadow(0 -0.5mm 0 #fff);
+}
+
+.red-korica {
+  display: flex;
+  gap: 6mm;
+  align-items: flex-start;
+}
+.kep-isecak {
+  flex: 0 0 95mm;
+  border-radius: 50%;
+}
+.kep-isecak .stiker-kep {
+  width: 95mm;
+  height: 95mm;
+  animation: none;
+}
+.ikone {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5mm;
+  padding: 1.5mm;
+}
+.ikona .stiker-svg {
+  width: 17mm;
+}
+
+.naslovi {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5mm;
+  padding: 1.5mm;
+}
+.naslov {
+  gap: 3mm;
+  padding: 2.5mm 5mm;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #b8304d, #8c1730);
+  border: 0.6mm solid #e9c46a;
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+  font-size: 18pt;
+  justify-content: flex-start;
+}
+.naslov .stiker-svg {
+  width: 11mm;
+  flex: none;
+}
+
+.natpisi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5mm 6mm;
+  padding: 1.5mm;
+}
+
+.list-porukice {
+  height: auto;
+  overflow: visible;
+}
+.porukice-stampa {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.5mm;
+  padding: 1.5mm;
+  align-content: flex-start;
+}
+.porukica-st {
+  max-width: 88mm;
+  padding: 2mm 4mm;
+  font-family: var(--ruka);
+  font-weight: 700;
+  font-size: 15pt;
+  line-height: 1.1;
+  color: #3b2a2a;
+  background: #fffaf3;
+  border-left: 2mm solid var(--boja, #e8304f);
+  border-radius: 1.5mm;
+  box-shadow: inset 0 0 0 0.3mm rgba(0, 0, 0, 0.08);
+}
+.porukica-st-cheer {
+  --boja: #e8304f;
+}
+.porukica-st-putovanja {
+  --boja: #3a8fd6;
+}
+.porukica-st-fakultet {
+  --boja: #f2b632;
+}
+.porukica-st-zurke {
+  --boja: #8a4fd0;
+}
+.porukica-st-svadba {
+  --boja: #e9b949;
+}
+.porukica-st-gluposti {
+  --boja: #2fb38a;
+}
+.porukica-st-kraj {
+  --boja: #9b1f38;
+}
